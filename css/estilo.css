@@ -1,0 +1,548 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+.encabezado, .contenedor .section1 .titulocd, .contenedor .aside .tituloc, .panoramicanoa h2, .galeriaNOA h2, .coleccionny h2, .refcolection h2, h2, .bigeyes h2, .girls h2, .carousel .carousel-caption p {
+  margin-left: 2rem;
+  padding: 2rem;
+  font-family: "Roboto Flex", sans-serif;
+  text-shadow: 5px 3 1 black; }
+
+.titulo, .titulo-index, .titulo-digitalhome, .carousel .carousel-caption h5, .titulo-bio {
+  text-align: center;
+  font-family: "Anton", sans-serif;
+  font-size: 2.5rem;
+  line-height: 1.5;
+  letter-spacing: 1.5; }
+
+.transformacion, .panoramicanoa img, .coleccionny img, .refcolection img, .digitaldestacada a img, .digital_colecciones a img, .bigeyes img, .girls img, .card {
+  transition: all 500ms ease; }
+  .transformacion:hover, .panoramicanoa img:hover, .coleccionny img:hover, .refcolection img:hover, .digitaldestacada a img:hover, .digital_colecciones a img:hover, .bigeyes img:hover, .girls img:hover, .card:hover {
+    transform: scale(1.2); }
+
+body {
+  font-family: "Roboto Flex", sans-serif;
+  background-image: url(https://img.freepik.com/foto-gratis/muro-hormigon-gris_53876-88973.jpg?t=st=1652292481~exp=1652293081~hmac=8d4925b971745e18647f3d0d31eff33478563701455c126d7c1d838ac4214cbe&w=1060);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; }
+
+header {
+  padding: 0 20px; }
+  header .navbar-nav {
+    display: flex; }
+    header .navbar-nav .nav-item {
+      list-style: none;
+      justify-content: space-around; }
+      header .navbar-nav .nav-item .nav-link {
+        text-decoration: none;
+        font-family: "Anton", sans-serif;
+        font-size: x-large;
+        color: black; }
+        header .navbar-nav .nav-item .nav-link:hover {
+          background-color: black;
+          color: aliceblue; }
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  align-content: center; }
+  footer img {
+    width: 50px; }
+
+.titulo-index {
+  font-size: 40px;
+  padding-left: 2rem;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  text-align: left;
+  justify-content: flex-start; }
+
+.indexp {
+  font-family: "Roboto Flex", sans-serif;
+  font-size: x-large;
+  margin: 10px;
+  padding: 2rem; }
+
+.contenedor {
+  margin: auto;
+  width: 90%;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-row: 1fr 5fr 1fr;
+  grid-template-areas: "section1 aside" "footer footer"; }
+  .contenedor .section1 {
+    grid-area: section1; }
+    .contenedor .section1 .titulocd {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      align-items: center;
+      flex-direction: row;
+      font-size: 2rem;
+      justify-content: flex-start; }
+    .contenedor .section1 .colecciondestacada {
+      display: flex; }
+      .contenedor .section1 .colecciondestacada img {
+        width: 280px;
+        justify-content: space-around;
+        align-content: space-around;
+        padding-left: 0.5rem;
+        border-radius: 7px;
+        transition: all 500ms ease; }
+        .contenedor .section1 .colecciondestacada img:hover {
+          transform: scale(1.2); }
+    .contenedor .section1 .colecciondestacadados {
+      display: none; }
+  .contenedor .aside {
+    grid-area: aside; }
+    .contenedor .aside .tituloc {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      align-items: center;
+      flex-direction: column;
+      font-size: 2rem;
+      justify-content: flex-start; }
+    .contenedor .aside .colecciones {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      align-items: center;
+      flex-direction: row;
+      width: 300px;
+      height: 400px;
+      overflow: auto; }
+      .contenedor .aside .colecciones a img {
+        width: 250px;
+        border-radius: 7px;
+        transition: all 500ms ease; }
+        .contenedor .aside .colecciones a img:hover {
+          opacity: .7;
+          border: 0.2rem solid yellow;
+          border-radius: 0.2rem; }
+    .contenedor .aside .colecciones::-webkit-scrollbar {
+      width: 7px;
+      background-color: #b0c30a;
+      border-radius: 7px; }
+
+.panoramicanoa {
+  padding: 0.7rem;
+  margin: 70px;
+  width: 1200px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column; }
+  .panoramicanoa img {
+    width: 1200px;
+    border-radius: 7px; }
+    .panoramicanoa img:hover {
+      opacity: .7;
+      border: 0.2rem solid yellow;
+      border-radius: 0.2rem; }
+  .panoramicanoa h2 {
+    text-align: center;
+    justify-content: center auto;
+    padding: 0;
+    margin: 0;
+    margin-top: 1rem; }
+
+.galeriaNOA {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: row; }
+  .galeriaNOA img {
+    width: 300px;
+    border-radius: 7px; }
+    .galeriaNOA img:hover {
+      opacity: .7;
+      border: 0.2rem solid yellow;
+      border-radius: 0.2rem; }
+  .galeriaNOA h2 {
+    text-align: center;
+    justify-content: center auto;
+    padding: 0;
+    margin: 0;
+    margin-top: 1rem; }
+
+.coleccionny {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 2rem; }
+  .coleccionny img {
+    width: 200px; }
+  .coleccionny h2 {
+    text-align: center;
+    justify-content: center auto;
+    padding: 0;
+    margin: 0;
+    margin-top: 1rem; }
+
+.refcolection {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: row; }
+  .refcolection img {
+    width: 300px;
+    border: 0.1rem solid yellow;
+    border-radius: 0.2rem; }
+  .refcolection h2 {
+    text-align: center;
+    justify-content: center auto;
+    padding: 0;
+    margin: 0;
+    margin-top: 1rem; }
+
+.contactMain {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: row;
+  width: 100%; }
+  .contactMain .formulario {
+    width: 450px;
+    border: 0.2rem solid black;
+    border-radius: 0.2rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    align-items: center auto;
+    align-content: center auto;
+    justify-content: space-around; }
+  .contactMain .mapa {
+    width: 40%;
+    align-content: center;
+    justify-content: center;
+    align-items: center; }
+
+.titulo-digitalhome {
+  font-size: 40px;
+  padding-left: 2rem;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  text-align: left;
+  justify-content: flex-start; }
+
+.digitaldestacada {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center; }
+  .digitaldestacada a img {
+    width: 1100px; }
+
+.digitaldestacadados a img {
+  display: none; }
+
+.digital_colecciones {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly; }
+  .digital_colecciones a img {
+    width: 350px; }
+
+.bigeyes {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-around;
+  align-items: center; }
+  .bigeyes img {
+    width: 400px;
+    border: 0.2rem solid yellow;
+    border-radius: 0.2rem; }
+  .bigeyes h2 {
+    text-align: center;
+    justify-content: center auto;
+    padding: 0;
+    margin: 0;
+    margin-top: 1rem;
+    margin-bottom: 1rem; }
+
+.shop-photo-cd {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: row; }
+
+.ref-shop {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between; }
+
+.noa-shop {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center; }
+
+.mapuche-shop {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center; }
+
+.div-shop {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center; }
+
+.water-shop {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center; }
+
+.shop-photo-dig {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center; }
+
+.bigeyes-shop {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center; }
+
+.tecno-shop {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center; }
+
+.power-shop {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center; }
+
+.girls {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-around;
+  align-items: center; }
+  .girls img {
+    width: 400px;
+    border: 0.2rem solid yellow;
+    border-radius: 0.2rem; }
+  .girls h2 {
+    text-align: center;
+    justify-content: center auto;
+    padding: 0;
+    margin: 0;
+    margin-top: 1rem;
+    margin-bottom: 1rem; }
+
+.card {
+  background-color: whitesmoke;
+  margin-top: 2rem;
+  border: 0.1rem solid yellow;
+  border-radius: 0.2rem; }
+  .card .card-body .card-title {
+    font-family: "Anton", sans-serif; }
+  .card .card-body .card-text {
+    font-family: "Roboto Flex", sans-serif;
+    color: black;
+    align-content: center; }
+
+.carousel {
+  border: 0.1rem solid yellow;
+  border-radius: 0.2rem; }
+  .carousel .carousel-caption p {
+    color: yellow;
+    text-shadow: 5px 3 1 black;
+    padding: 0;
+    margin: 0; }
+  .carousel .carousel-caption h5 {
+    color: yellow;
+    text-shadow: 3px 3 1 black; }
+
+@media screen and (max-width: 768px) {
+  .contenedor {
+    grid-template-areas: "section1" "aside " "footer";
+    grid-template-columns: 3fr;
+    grid-row: 5fr 5fr 1fr; }
+    .contenedor .section1 .titulocd {
+      width: 400px;
+      align-content: center  auto;
+      align-items: center auto;
+      justify-content: center auto; }
+    .contenedor .section1 .colecciondestacadados {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      align-items: center;
+      flex-direction: column; }
+      .contenedor .section1 .colecciondestacadados img {
+        width: 350px;
+        margin-top: 0.7rem;
+        margin-left: 1rem;
+        align-items: center;
+        justify-content: space-around;
+        transition: all 500ms ease; }
+        .contenedor .section1 .colecciondestacadados img:hover {
+          transform: scale(1.2); }
+    .contenedor .colecciondestacada img {
+      display: none; }
+  .aside {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column; }
+  .coleccionny {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row; }
+  .refcolection {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around; }
+  .contactMain {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column; }
+    .contactMain .formulario {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      align-items: center;
+      flex-direction: row;
+      border: 0.2rem solid black;
+      border-radius: 0.2rem;
+      margin-bottom: 10px;
+      align-items: center auto;
+      align-content: center auto;
+      justify-content: space-around; }
+    .contactMain .mapa {
+      display: none; }
+  .digitaldestacada img {
+    display: none; }
+  .digitaldestacadados a img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center auto;
+    align-items: center auto;
+    align-content: center auto;
+    padding-left: 5rem;
+    width: 400px; }
+  .digital_colecciones {
+    display: flex;
+    flex-direction: column; }
+    .digital_colecciones a img {
+      justify-content: space-between;
+      align-items: space-between;
+      align-content: space-between;
+      padding-left: 3rem;
+      margin-top: 3rem;
+      width: 400px; } }
+
+@media screen and (max-width: 320px) {
+  .contenedor {
+    grid-template-areas: "section1" "aside " "footer";
+    grid-template-columns: 3fr;
+    grid-row: 5fr 5fr 1fr; }
+  .titulo-index {
+    text-align: center;
+    justify-content: center; }
+  .coleccionny {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center; }
+  .card img {
+    width: 150px;
+    align-items: center auto;
+    align-content: center auto;
+    justify-content: center auto; }
+  .card .card-body {
+    align-items: center auto;
+    align-content: center auto;
+    justify-content: center auto; }
+  .digitaldestacada img {
+    display: none; }
+  .digitaldestacadados a img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center auto;
+    align-items: center auto;
+    align-content: center auto;
+    padding-left: 1rem;
+    width: 300px; }
+  .digital_colecciones {
+    display: flex;
+    flex-direction: column; }
+    .digital_colecciones a img {
+      justify-content: space-between;
+      align-items: space-between;
+      align-content: space-between;
+      padding-left: 1rem;
+      margin-top: 3rem;
+      width: 300px; } }
+
+.titulo-bio {
+  justify-content: center; }
+
+header .romoli {
+  height: 400px;
+  background-image: url(https://www.doctorojiplatico.com/2013/04/francesco-romoli-imaginary-towns.html);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; }

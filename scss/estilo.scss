@@ -1,0 +1,47 @@
+$ImagenFondo: url(https://img.freepik.com/foto-gratis/muro-hormigon-gris_53876-88973.jpg?t=st=1652292481~exp=1652293081~hmac=8d4925b971745e18647f3d0d31eff33478563701455c126d7c1d838ac4214cbe&w=1060);
+$FontTit: 'Anton', sans-serif;  
+$FontText:'Roboto Flex', sans-serif;
+@import "base/reset";
+@import "abstracts/mixins";
+@import "abstracts/extends";
+@import "body";
+@import "header";
+@import "footer";
+@import "paginas/index";
+@import "paginas/noa";
+@import "paginas/colecciondestacada";
+@import "paginas/reflejos";
+@import "paginas/contact";
+@import "paginas/digitalhome";
+@import "./paginas/emme";
+@import "./paginas/aboutus";
+@import "./paginas/shop";
+@import "./paginas/girlspower";
+@import "./paginas/aboutus";
+@import "./componentes/card";
+@import "./componentes/carousel";
+@import "mediaqueries";
+
+
+
+.titulo-bio{
+    @extend .titulo;
+    justify-content: center;
+    
+}
+header{
+    .romoli{
+            height: 400px;
+            background-image: url(https://www.doctorojiplatico.com/2013/04/francesco-romoli-imaginary-towns.html);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+    }
+}
+
+
+
+
+
+
+

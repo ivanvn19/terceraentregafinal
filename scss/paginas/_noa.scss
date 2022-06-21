@@ -1,0 +1,44 @@
+.panoramicanoa{
+    padding: 0.7rem;
+    margin: 70px;
+    width: 1200px;
+    @include flexible(column);
+    img{
+        width: 1200px;
+        border-radius: 7px;
+        &:hover{
+            opacity: .7;
+            @include borde(yellow);
+        }
+        @extend .transformacion;
+    }
+    h2{
+        text-align: center;
+        justify-content: center auto;
+        @extend .encabezado;
+        padding: 0;
+        margin: 0;
+        margin-top: 1rem;
+    }
+
+}
+.galeriaNOA{
+    @include flexible(row);
+    img{
+        width: 300px;
+        border-radius: 7px;
+        &:hover{
+            opacity: .7;
+            @include borde (yellow);
+        }
+    
+    }
+    h2{
+        text-align: center;
+        justify-content: center auto;
+        @extend .encabezado;
+        padding: 0;
+        margin: 0;
+        margin-top: 1rem;
+    }
+}

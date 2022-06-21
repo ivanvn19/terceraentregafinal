@@ -1,0 +1,16 @@
+.card{
+    background-color: whitesmoke;
+    margin-top: 2rem;
+    @include borde( yellow, 0.1rem);
+    @extend .transformacion;
+    .card-body{
+        .card-title{
+            font-family: $FontTit;
+        }
+        .card-text{
+            font-family: $FontText;
+            color:black;
+            align-content: center;
+        }
+    }
+}

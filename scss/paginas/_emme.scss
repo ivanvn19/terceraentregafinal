@@ -1,0 +1,22 @@
+.bigeyes{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+    img{
+        width: 400px;
+        @extend .transformacion;
+        
+        @include borde (yellow);
+    } 
+    h2{
+        text-align: center;
+        justify-content: center auto;
+        @extend .encabezado;
+        padding: 0;
+        margin: 0;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+} 

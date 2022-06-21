@@ -1,0 +1,19 @@
+.encabezado{
+    margin-left: 2rem;
+    padding: 2rem;
+    font-family:$FontText;
+    text-shadow: 5px 3 1 black;
+}
+.titulo{
+    text-align: center;
+    font-family: $FontTit;
+    font-size: 2.5rem;
+    line-height: 1.5;
+    letter-spacing: 1.5;
+}
+.transformacion {
+    transition: all 500ms ease;
+        &:hover{
+            transform: scale(1.2);
+        }
+}

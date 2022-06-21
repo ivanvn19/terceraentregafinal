@@ -1,0 +1,17 @@
+@mixin borde($color, $width:0.2rem,){ 
+    border: $width solid $color;
+    border-radius: 0.2rem;
+}
+
+@mixin dimensiones($ancho, $alto){
+    width:$ancho;
+    height: $alto;
+}
+
+@mixin flexible ($direccion) {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: $direccion;
+}

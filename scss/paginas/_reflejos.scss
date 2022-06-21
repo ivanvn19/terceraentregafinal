@@ -1,0 +1,16 @@
+.refcolection{
+    @include flexible(row);
+    img{
+        width: 300px;
+        @include borde(yellow, 0.1rem);
+        @extend .transformacion; 
+        }
+        h2{
+            text-align: center;
+            justify-content: center auto;
+            @extend .encabezado;
+            padding: 0;
+            margin: 0;
+            margin-top: 1rem;
+        }    
+    }

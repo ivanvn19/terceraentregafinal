@@ -1,0 +1,20 @@
+header{
+    padding: 0 20px;
+    .navbar-nav{
+        display: flex;
+            .nav-item{
+                list-style: none;
+                justify-content: space-around;
+                .nav-link{
+                    text-decoration: none;
+                    font-family: $FontTit;
+                    font-size: x-large;
+                    color: black;
+                    &:hover{
+                        background-color: black;
+                        color: aliceblue;
+                        }
+                } 
+            }  
+    }
+}

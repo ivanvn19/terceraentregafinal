@@ -1,0 +1,19 @@
+
+.carousel{
+    @include borde (yellow, 0.1rem);
+
+    .carousel-caption {
+        p {
+            @extend .encabezado;
+            color: yellow;
+            text-shadow: 5px 3 1 black;
+            padding: 0;
+            margin: 0;
+        }
+        h5{
+            @extend .titulo;
+            color: yellow;
+            text-shadow: 3px 3 1 black;
+        }
+    }
+}
